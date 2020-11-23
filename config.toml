@@ -16,11 +16,11 @@ pygmentsCodeFencesGuessSyntax = true
 
 [params]
     author = "Jeff Linse"
-    description = "Jeff's space on the World Wide Web"
+    #description = ""
     keywords = "blog,developer,personal"
     info = "Full Stack Software Engineer"
     avatarURL = "images/avatar.jpg"
-    #gravatar = "jeff@jefflinse.com"
+    #gravatar = "name@example.com"
     #footerContent = "Enter a text here."
 
     dateFormat = "January 2, 2006"
@@ -136,8 +136,3 @@ pygmentsCodeFencesGuessSyntax = true
             name = "Projects"
             weight = 3
             url = "projects/"
-
-            [[languages.en.menu.main]]
-            name = "Contact"
-            weight = 4
-            url = "contact/"
