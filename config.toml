@@ -55,7 +55,7 @@ pygmentsCodeFencesGuessSyntax = true
     customCSS = []
 
     # Custom SCSS
-    customSCSS = []
+    customSCSS = ["scss/overrides.scss"]
 
     # Custom JS
     customJS = []
@@ -115,6 +115,19 @@ pygmentsCodeFencesGuessSyntax = true
 #    rel = "alternate"
 #    type = "application/rss+xml"
 
+[markup]
+    [markup.highlight]
+        anchorLineNos = false
+        codeFences = true
+        guessSyntax = false
+        hl_Lines = ""
+        lineAnchors = ""
+        lineNoStart = 1
+        lineNos = false
+        lineNumbersInTable = false
+        noClasses = true
+        style = "friendly"
+        tabWidth = 4
 
 [languages]
     [languages.en]
