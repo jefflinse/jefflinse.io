@@ -147,29 +147,32 @@ code { // single-backtick inline blocks
 //   font-style: italic;
 // }
 
-// th, td {
-//   padding: 1.6rem;
-// }
-// table {
-//   border-collapse: collapse;
-// }
-// table td, table th {
-//   // border: 2px solid $alt-fg-color;
-// }
-// table tr:first-child th {
-//   border-top: 0;
-// }
-// table tr:last-child td {
-//   border-bottom: 0;
-// }
-// table tr td:first-child,
-// table tr th:first-child {
-//   border-left: 0;
-// }
-// table tr td:last-child,
-// table tr th:last-child {
-//   border-right: 0;
-// }
+th, td {
+  padding: 1.2rem;
+}
+table {
+  background-color: white;
+  border-collapse: collapse;
+  color: #777;
+  font-family: Lato, Helvetica, sans-serif;
+}
+table td, table th {
+  border: 1px solid #808080;
+}
+table tr:first-child th {
+  border-top: 1px solid #808080;
+}
+table tr:last-child td {
+  border-bottom: 1px solid #808080;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 1px solid #808080;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 1px solid #808080;
+}
 
 // img {
 //   max-width: 100%;

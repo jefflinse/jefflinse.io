@@ -1,4 +1,4 @@
-baseURL = "http://jefflinse.io"
+baseURL = "https://jefflinse.io"
 title = "Jeff Linse"
 
 theme = "hugo-coder"
@@ -17,8 +17,8 @@ pygmentsCodeFencesGuessSyntax = true
 [params]
     author = "Jeff Linse"
     #description = ""
-    keywords = "blog,developer,personal"
-    info = "Full Stack Software Engineer"
+    keywords = "jeff,linse,jefflinse,jlinse,software,developer,personal,box"
+    info = "Full Stack Software Developer"
     avatarURL = "images/avatar.jpg"
     #gravatar = "name@example.com"
     #footerContent = "Enter a text here."
@@ -26,12 +26,9 @@ pygmentsCodeFencesGuessSyntax = true
     dateFormat = "January 2, 2006"
 
     hideFooter = false
-    hideCredits = true
+    hideCredits = false
     hideCopyright = false
     since = 2020
-
-    # Git Commit in Footer, uncomment the line below to enable it.
-    commit = "https://github.com/luizdepra/hugo-coder/tree/"
 
     rtl = false
 
@@ -40,10 +37,10 @@ pygmentsCodeFencesGuessSyntax = true
     # "auto" (use preference set by browser)
     # "dark" (dark background, light foreground)
     # "light" (light background, dark foreground) (default)
-    colorScheme = "auto"
+    colorScheme = "light"
 
     # Hide the toggle button, along with the associated vertical divider
-    hideColorSchemeToggle = false
+    hideColorSchemeToggle = true
 
     # Series see also post count
     maxSeeAlsoItems = 5
@@ -51,30 +48,8 @@ pygmentsCodeFencesGuessSyntax = true
     # Enable Twemoji
     enableTwemoji = true
 
-    # Custom CSS
-    customCSS = []
-
     # Custom SCSS
     customSCSS = ["scss/overrides.scss"]
-
-    # Custom JS
-    customJS = []
-
-# If you want to use fathom(https://usefathom.com) for analytics, add this section
-[params.fathomAnalytics]
-    siteID = "ABCDE"
-    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-    serverURL = "analytics.example.com"
-
-# If you want to use plausible(https://plausible.io) for analytics, add this section
-[params.plausibleAnalytics]
-    domain = "example.com"
-    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
-    serverURL = "analytics.example.com"
-
-# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
-[params.goatCounter]
-    code = "code"
 
 [taxonomies]
   category = "categories"
@@ -88,11 +63,6 @@ pygmentsCodeFencesGuessSyntax = true
     weight = 1
     url = "https://github.com/jefflinse"
 #[[params.social]]
-#    name = "Gitlab"
-#    icon = "fa fa-gitlab"
-#    weight = 2
-#    url = "https://gitlab.com/johndoe/"
-#[[params.social]]
 #    name = "Twitter"
 #    icon = "fa fa-twitter"
 #    weight = 3
@@ -102,18 +72,13 @@ pygmentsCodeFencesGuessSyntax = true
     icon = "fa fa-linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/jefflinse"
-#[[params.social]]
-#    name = "Medium"
-#    icon = "fa fa-medium"
-#    weight = 5
-#    url = "https://medium.com/@johndoe"
-#[[params.social]]
-#    name = "RSS"
-#    icon = "fa fa-rss"
-#    weight = 6
-#    url = "https://myhugosite.com/index.xml"
-#    rel = "alternate"
-#    type = "application/rss+xml"
+[[params.social]]
+    name = "RSS"
+    icon = "fa fa-rss"
+    weight = 6
+    url = "/index.xml"
+    rel = "alternate"
+    type = "application/rss+xml"
 
 [markup]
     [markup.highlight]
@@ -149,6 +114,3 @@ pygmentsCodeFencesGuessSyntax = true
             name = "Projects"
             weight = 3
             url = "projects/"
-
-[permalinks]
-post = "/post/:year/:month/:title/"
