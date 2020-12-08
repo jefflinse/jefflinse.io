@@ -149,3 +149,6 @@ pygmentsCodeFencesGuessSyntax = true
             name = "Projects"
             weight = 3
             url = "projects/"
+
+[permalinks]
+post = "/post/:year/:month/:title/"
