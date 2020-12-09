@@ -1,9 +1,7 @@
 +++ 
 title = "Encrypting GitHub Secrets using Go"
-slug = "encrypting-github-secrets-using-go"
 date = 2020-12-08T19:50:00-08:00
 description = "How to encrypt a GitHub secret in Golang"
-draft = true
 +++
 
 >Want to start encrypting right away? Skip to [GitHub](https://github.com/jefflinse/githubsecret/blob/main/nacl.go) or [install the package](#package).
