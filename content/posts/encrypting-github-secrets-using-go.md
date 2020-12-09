@@ -1,7 +1,7 @@
 +++ 
 title = "Encrypting GitHub Secrets using Go"
 slug = "encrypting-github-secrets-using-go"
-date = 2020-12-02T21:28:23-08:00
+date = 2020-12-08T19:50:00-08:00
 description = "How to encrypt a GitHub secret in Golang"
 draft = true
 +++
