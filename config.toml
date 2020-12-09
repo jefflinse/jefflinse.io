@@ -13,6 +13,7 @@ pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 
 #disqusShortname = "yourdiscussshortname"
+googleAnalytics = "G-X3LFE83NPE"
 
 [params]
     author = "Jeff Linse"
