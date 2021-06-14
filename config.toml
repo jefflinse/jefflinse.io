@@ -18,15 +18,15 @@ googleAnalytics = "G-X3LFE83NPE"
 [params]
     author = "Jeff Linse"
     #description = ""
-    keywords = "jeff,linse,jefflinse,jlinse,software,developer,personal,box"
+    keywords = "jeff,linse,jefflinse,jlinse,software,developer,engineer,seattle,wa,washington,hbo,warner,media,warnermedia"
     info = "Full Stack Software Developer"
     avatarURL = "images/avatar.jpg"
     #gravatar = "name@example.com"
     #footerContent = "Enter a text here."
-
+    
     dateFormat = "January 2, 2006"
 
-    hideFooter = false
+    hideFooter = true
     hideCredits = false
     hideCopyright = false
     since = 2020
@@ -73,13 +73,13 @@ googleAnalytics = "G-X3LFE83NPE"
     icon = "fa fa-linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/jefflinse"
-[[params.social]]
-    name = "RSS"
-    icon = "fa fa-rss"
-    weight = 6
-    url = "/index.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
+#[[params.social]]
+#    name = "RSS"
+#    icon = "fa fa-rss"
+#    weight = 6
+#    url = "/index.xml"
+#    rel = "alternate"
+#    type = "application/rss+xml"
 
 [markup]
     [markup.highlight]
@@ -101,12 +101,12 @@ googleAnalytics = "G-X3LFE83NPE"
 
         [languages.en.menu]
 
-            [[languages.en.menu.main]]
-            name = "Projects"
-            weight = 1
-            url = "projects/"
+            #[[languages.en.menu.main]]
+            #name = "Projects"
+            #weight = 1
+            #url = "projects/"
 
-            [[languages.en.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "posts/"
+            #[[languages.en.menu.main]]
+            #name = "Blog"
+            #weight = 2
+            #url = "posts/"
