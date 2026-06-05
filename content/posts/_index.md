@@ -1,3 +1,4 @@
 +++
-title = "Blog Posts"
+title = "Blog"
+description = "Posts by Jeff Linse"
 +++

@@ -1,0 +1,48 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Only one deploy at a time; cancel superseded runs.
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        # Do NOT recurse submodules: the `public` submodule uses an SSH URL the
+        # runner can't reach. We init only the theme (HTTPS) below.
+
+      - name: Fetch theme
+        run: git submodule update --init themes/hugo-coder
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.162.1"
+          extended: true
+
+      - name: Build
+        run: hugo --gc --minify
+
+      # Push the generated site to the Pages repo. The deploy key is an SSH
+      # key whose public half is a write-enabled deploy key on the target repo.
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: jefflinse/jefflinse.github.io
+          publish_branch: main
+          publish_dir: ./public
+          # CNAME also ships via static/CNAME; set here as a belt-and-suspenders
+          # guard so a build without it can never strip the custom domain.
+          cname: jefflinse.io
+          commit_message: "Deploy ${{ github.sha }}"
